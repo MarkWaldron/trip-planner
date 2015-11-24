@@ -12,13 +12,15 @@
     "jquery": "^2.1.4",
     "mongoose": "^4.2.7",
     "morgan": "^1.6.1",
-    "nodemon": "^1.8.1",
+    "node-sass": "^3.4.2",
     "swig": "^1.4.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^1.8.1"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js"
+    "build-css": "node-sass -w -r assets/stylesheets --o public/stylesheets",
+    "start": "npm run build-css & nodemon -e html,css,js app.js"
   },
   "keywords": [],
   "author": "",
