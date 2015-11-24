@@ -1,8 +1,14 @@
 {% extends "layout.html" %}
 
 {% block content %}
-<div style="margin-top: 200px">
-  <p>Hotel:
+<div class = "row">
+<div class = "col-lg-8">
+<div id = "map-canvas">
+</div>
+</div>
+<div class = "col-lg-4">
+<div class = "panel">
+  <p><span class="glyphicon glyphicon-home"></span>Hotel:
     <select>
       {% for hotel in all_hotels %}
         <option value="{{ hotel.name }}">{{ hotel.name }}</option>
@@ -10,7 +16,7 @@
     </select>
   </p>
 
-  <p>Restaurant:
+  <p><span class="glyphicon glyphicon-glass"></span>Restaurant:
     <select>
       {% for restaurant in all_restaurants %}
         <option value="{{ restaurant.name }}">{{ restaurant.name }}</option>
@@ -18,14 +24,14 @@
     </select>
   </p>
 
-  <p>Activity:
+  <p><span class="glyphicon glyphicon-fire"></span>Activity:
     <select>
       {% for activity in all_activities %}
         <option value="{{ activity.name }}">{{ activity.name }}</option>
       {% endfor %}
     </select>
   </p>
-
 </div>
-
+</div>
+</div>
 {% endblock %}

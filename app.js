@@ -19,7 +19,7 @@ swig.setDefaults({cache: false});
 app.use('/stylesheets', express.static(__dirname + '/public/stylesheets'));
 app.use('/bootstrap', express.static(__dirname + '/node_modules/bootstrap/dist'));
 app.use('/jquery', express.static(__dirname + '/node_modules/jquery/dist'));
-
+app.use('/js', express.static(__dirname + '/public/js'));
 
 app.use('/', routes);
 

@@ -1,0 +1,29 @@
+$navColor: #71d7d2;
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body,html,#map-canvas{
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}
+
+.panel{
+
+}
+
+.navbar-inverse {
+    background-color: $navColor;
+    border-bottom: transparent;
+
+    .navbar-brand {
+    	color: black;
+
+    }
+}
+
