@@ -16,8 +16,15 @@ app.set('view engine', 'html');
 app.engine('html', swig.renderFile);
 swig.setDefaults({cache: false});
 
+app.use('/stylesheets', express.static(__dirname + '/public/stylesheets'));
+app.use('/bootstrap', express.static(__dirname + '/node_modules/bootstrap/dist'));
+app.use('/jquery', express.static(__dirname + '/node_modules/jquery/dist'));
+
 
 app.use('/', routes);
+
+
+
 
 
 // catch 404 (i.e., no route was hit) and forward to error handler
