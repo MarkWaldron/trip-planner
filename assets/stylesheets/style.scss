@@ -6,15 +6,8 @@ $navColor: #71d7d2;
   box-sizing: border-box;
 }
 
-body,html,#map-canvas{
-	padding: 0;
-	height: 100%;
-	width: 100%;
-	margin: 0;
-}
-
-.panel{
-
+body,html{
+  height: 100%;
 }
 
 .navbar-inverse {
@@ -22,8 +15,26 @@ body,html,#map-canvas{
     border-bottom: transparent;
 
     .navbar-brand {
-    	color: black;
-
+      color: black;
     }
 }
 
+.panel {
+  position: absolute;
+  top: 80px;
+  left: 65vw;
+}
+
+.map-div {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  left: -15px;
+  bottom: 0;
+}
+
+#map-canvas {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
