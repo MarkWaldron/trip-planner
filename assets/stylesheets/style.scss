@@ -1,4 +1,4 @@
-$navColor: #71d7d2;
+$navColor: #4a148c;
 
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
@@ -10,21 +10,38 @@ body,html{
   height: 100%;
 }
 
+.container {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 .navbar-inverse {
     background-color: $navColor;
     border-bottom: transparent;
 
     .navbar-brand {
-      color: black;
+      color: white;
+      font-style: oblique;
+      font-size: 24px;
     }
 }
 
 .panel {
   position: absolute;
   top: 80px;
-  left: 65vw;
+  left: 75vw;
+  width: 20vw;
 }
 
+p {
+  text-align: left;
+}
+
+select {
+    // only works in webkit-compatible browsers
+    -webkit-appearance: menulist-button;
+    width: 200px;
+}
 .map-div {
   position: absolute;
   top: 50px;

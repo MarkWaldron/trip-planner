@@ -6,16 +6,30 @@
 body, html {
   height: 100%; }
 
+.container {
+  margin-left: 0;
+  margin-right: 0; }
+
 .navbar-inverse {
-  background-color: #71d7d2;
+  background-color: #4a148c;
   border-bottom: transparent; }
   .navbar-inverse .navbar-brand {
-    color: black; }
+    color: white;
+    font-style: oblique;
+    font-size: 24px; }
 
 .panel {
   position: absolute;
   top: 80px;
-  left: 65vw; }
+  left: 75vw;
+  width: 20vw; }
+
+p {
+  text-align: left; }
+
+select {
+  -webkit-appearance: menulist-button;
+  width: 200px; }
 
 .map-div {
   position: absolute;
