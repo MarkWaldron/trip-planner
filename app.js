@@ -11,6 +11,11 @@ app.use(morgan('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true}));
 
+app.set('views', __dirname + '/views');
+app.set('view engine', 'html');
+app.engine('html', swig.renderFile);
+swig.setDefaults({cache: false});
+
 
 app.use('/', routes);
 
