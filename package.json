@@ -12,7 +12,7 @@
     "jquery": "^2.1.4",
     "mongoose": "^4.2.7",
     "morgan": "^1.6.1",
-    "node-sass": "^3.4.2",
+    "node-sass": "^4.14.1",
     "swig": "^1.4.2"
   },
   "devDependencies": {
